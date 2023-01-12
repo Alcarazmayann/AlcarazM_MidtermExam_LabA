@@ -1,7 +1,7 @@
 const fs =require ('fs')
 
-const write = function (){
-    fs.writeFileSync('data.txt','data');
+const write = function (data="default"){
+    fs.writeFileSync('data.txt',data);
 }
 
 module.exports = write ;
